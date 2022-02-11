@@ -1,0 +1,140 @@
+/*Standard Style*/
+body{
+  background: hsl(54, 100%, 82%);
+}
+h1{
+  display: block;
+  color: white;
+  font-family: 'Rowdies', cursive;
+  font-weight: bolder;
+  font-size: 46px;
+  text-align: center;
+  margin-top: 70px;
+}
+ul{
+list-style-type: none;
+}
+span{
+  display: block;
+}
+li{
+  margin-top: 10px;
+}
+
+
+
+
+/*Boxed Library Content Style*/
+.bookContent{
+  display: block;
+  margin: auto;
+  width: 65%;
+  height: 400px;
+  border: 3px inset black;
+  border-radius: 10px 80px 25px 10px;
+  background: #FDF5E6;
+  overflow: scroll;
+}
+.codeContent{
+  display: none;
+  margin: auto;
+  width: 65%;
+  height: 400px;
+  border: 3px inset black;
+  border-radius: 10px 80px 25px 10px;
+  background: #FDF5E6;
+  overflow: scroll;
+}
+
+
+
+
+/*Form Style*/
+#addContentForm{
+  background: snow;
+  /*position: fixed;*/
+}
+#addContentFormTwo{
+  background: snow;
+}
+
+
+
+
+/*Inputted Content Style*/
+.nameInput{
+  font-weight: bold;
+  font-family: 'Inconsolata', monospace;
+  font-size: 1.6em;
+}
+.contentInput{
+  display: block;
+  background: white;
+  width: 395px;
+  padding: 20px;
+  border: 1px solid transparent;
+  border-radius: 10px 80px 25px 10px;
+  margin: 20px auto;
+}
+
+
+
+
+/*Input Style*/
+input{
+    border: none;
+    border-bottom: 1px solid gray;
+    font-size: 1.01em;
+    background: snow;
+}
+#nameCreate{
+  margin-left: 50px;
+}
+#typeCreate{
+  margin-left: 120px;
+}
+#functionCreate{
+  margin-left: 50px;
+}
+#focusCreate{
+  margin-left: 50px;
+}
+
+
+
+
+/*Button Style*/
+.bookContent button{
+  margin-left: 70px;
+  background: lime;
+  height: 30px;
+  width: 100px;
+  border-radius: 60px
+}
+.codeContent button{
+  margin-left: 70px;
+  background: lime;
+  height: 30px;
+  width: 100px;
+  border-radius: 60px
+}
+.closingButton{
+  display: inline;
+  float: right;
+  font-size: 34px;
+  vertical-align: middle;
+  /*background: #FDF5E6;
+  border: 1px solid transparent;*/
+  cursor: pointer;
+}
+.btnGroup{
+  text-align: center;
+  margin-bottom: 50px
+}
+.contentTypes button{
+  padding: 15px;
+  font-weight: bolder;
+  background: snow;
+  cursor: pointer;
+}
+.btnGroup button:hover{background:lightGray}

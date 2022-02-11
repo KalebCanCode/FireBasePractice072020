@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-firestore.js"></script>
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+  <!--<script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-analytics.js"></script>-->
+  <link rel="stylesheet" href="main.css">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Rowdies:wght@700&display=swap" rel="stylesheet">
+<meta charset="utf-8" >
+    <title></title>
+  </head>
+  <body>
+    <h1>Personal Content Library</h1>
+    <div class='contentTypes'>
+     <div class='btnGroup'>
+      <button id='bookBtn'class='active'>Books</button>
+      <button id='codeBtn'>Code</button>
+    </div>
+    </div>
+
+    <div class='bookContent'>
+      <form id="addContentForm">
+        <input type="text" name="name" id="nameCreate" placeholder="Book Name...">
+        <input type="text" name="type" id="typeCreate" placeholder="Book Type..." >
+        <button>Add Book</button>
+
+      </form>
+
+        <ul id="contentList"></ul>
+
+    </div>
+
+    <div class='codeContent'>
+      <form id='addContentFormTwo'>
+        <input type="text" name="function" id='functionCreate' placeholder="Code Function...">
+        <input type="text" name="focus" id='focusCreate' placeholder="Language/Strategy...">
+        <button>Add Program</button>
+      </form>
+        <ul id='codeContentList'></ul>
+    </div>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyDRJoHA2TsDBigNMbA-vEZ89xuZB9_i8ps",
+      authDomain: "firstfirebase-8332a.firebaseapp.com",
+      databaseURL: "https://firstfirebase-8332a.firebaseio.com",
+      projectId: "firstfirebase-8332a",
+      storageBucket: "firstfirebase-8332a.appspot.com",
+      messagingSenderId: "490325874526",
+      appId: "1:490325874526:web:1a08ef9361e0d9310d21cf",
+      measurementId: "G-R05ZMFQF8K"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+    //db.settings({timestampsInSnapshots: true});
+    firebase.analytics();
+  </script>
+  <script src="app.js"></script>
+  </body>
+</html>
